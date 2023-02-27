@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import { GoogleLogin } from "@react-oauth/google";
 import shareVideo from "../assets/share.mp4";
@@ -38,7 +38,7 @@ const Login = () => {
       _id: sub,
       _type: "user",
       userName: `${given_name} ${family_name}`,
-      imageUrl: picture,
+      image: picture,
     };
 
     client.createIfNotExists(doc).then(() => {
