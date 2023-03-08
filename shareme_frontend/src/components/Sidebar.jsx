@@ -29,7 +29,7 @@ function Sidebar({ user, closeToggle }) {
         <Link
           to="/"
           className="flex px-5 gap-2 my-6 pt-1 w-190 items-center"
-          onCLick={handleCloseSidebar}
+          onClick={handleCloseSidebar}
         >
           <img src={logo} alt="Logo" className="w-full" />
         </Link>
@@ -53,7 +53,7 @@ function Sidebar({ user, closeToggle }) {
               className={({ isActive }) =>
                 isActive ? isActiveStyle : isNotActiveStyle
               }
-              onCLick={handleCloseSidebar}
+              onClick={handleCloseSidebar}
               key={category.name}
             >
               {category.name}

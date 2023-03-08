@@ -1,6 +1,6 @@
 import React from 'react'
 
-function CreatePin() {
+function CreatePin({ user }) {
   return (
     <div>CreatePin</div>
   )
