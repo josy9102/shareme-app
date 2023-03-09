@@ -9,3 +9,9 @@ body {
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+@media (min-width: 768px) {
+  .d-flex {
+    display: flex !important;
+  }
+}
