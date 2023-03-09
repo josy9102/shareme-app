@@ -117,7 +117,7 @@ const Pin = ({ pin: { postedBy, image, _id, destination, save } }) => {
                     : destination.slice(8)}
                 </Link>
               )}
-              {postedBy?._id === user.sub && [
+              {postedBy?._id === user?.sub && [
                 <button
                   onClick={(e) => {
                     e.stopPropagation();
